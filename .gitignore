@@ -1,0 +1,9 @@
+# Staging area — temporary proposals pending review
+04_Dist/staging/
+
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
