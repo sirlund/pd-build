@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.0] — 2026-02-11
+## [0.2.0] — 2026-02-13
 
 Architecture definition session. Consolidated inputs from PD-Spec design notes, parallel Claude session on pd-spec, and design decisions into a definitive vision. PD-Build is now fully defined as philosophy and architecture — development starts after PD-Spec is validated with real projects.
 
