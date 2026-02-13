@@ -2,6 +2,10 @@
 
 ## [0.2.0] — 2026-02-11
 
+Architecture definition session. Consolidated inputs from PD-Spec design notes, parallel Claude session on pd-spec, and design decisions into a definitive vision. PD-Build is now fully defined as philosophy and architecture — development starts after PD-Spec is validated with real projects.
+
+**Next step:** Implement `/systemize` skill (v0.1: read PD-Spec Work layer → generate `tokens.json`). See `docs/ROADMAP.md`.
+
 ### Changed
 - **Architecture pivot** — From 4-layer (.toon format) to 3-layer (standard formats)
   - `01_Sources/` → `01_Contract/` (input from PD-Spec)
