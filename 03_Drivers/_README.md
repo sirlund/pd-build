@@ -1,15 +1,18 @@
-# 03_Drivers — Transformation Logic
+# 03_Drivers — Platform-Specific Output
 
-Drivers are system prompts that tell the AI agent how to transform TOON objects into tool-specific artifacts.
+**Generated.** Produced by `/compile` from definitions. Each driver targets a specific platform or tool.
 
-## Subfolders
+## Planned drivers
 
-### `logic/`
-System prompts for the AI agent:
-- `audit.md` — Pre-build validation. Scans Kernel for conflicts, missing DATA_SOURCE, inheritance violations.
-- `cursor_build.md` — Compilation. Reads TOON objects + templates, generates `.cursorrules`.
+| Driver | Output | Target |
+|---|---|---|
+| Cursor | `.cursorrules` | AI agent coding rules |
+| CSS | `variables.css` | CSS custom properties |
+| Tailwind | `config.js` | Tailwind theme |
 
-### `templates/`
-Output blueprints that define the structure of generated artifacts:
-- `.cursorrules` template — base structure for Cursor rules
-- Additional templates as drivers are added (CSS tokens, Pencil prompts, etc.)
+Additional drivers (Swift, Flutter, Figma plugin) are added when a real use case demands them.
+
+## Rules
+
+- Never edit driver output manually — regenerate from `02_Definitions/` instead
+- Drivers are the "heads" of the headless DS — definitions are the brain
