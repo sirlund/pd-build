@@ -6,6 +6,9 @@ Architecture definition session. Consolidated inputs from PD-Spec design notes, 
 
 **Next step:** Implement `/systemize` skill (v0.1: read PD-Spec Work layer → generate `tokens.json`). See `docs/ROADMAP.md`.
 
+### Added
+- `docs/BACKLOG.md` — BL-001 (configurable critical analysis), BL-002 (standalone mode without PD-Spec: conversational onboarding with minimum viable contract gate — Who/What/Why)
+
 ### Changed
 - **Architecture pivot** — From 4-layer (.toon format) to 3-layer (standard formats)
   - `01_Sources/` → `01_Contract/` (input from PD-Spec)
